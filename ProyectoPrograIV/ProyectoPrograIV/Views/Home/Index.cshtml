@@ -1,0 +1,78 @@
+﻿<div class="hero-unit">
+    <h2>Usuarios</h2>
+    <table id="tblLista" class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Genero</th>
+                <th>Correo</th>
+                <th>Telefono</th>
+                <th>Rol</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+    
+
+    <h2>Autores</h2>
+    <table id="tblListaAutores" class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Genero</th>
+                <th>Direccion</th>
+                <th>Telefono</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+</div>
+
+
+<h2>Obtener Uno</h2>
+<div>
+    <ul>
+        <li>
+            <label>ID:</label>
+            <input type="text" id="TxtUsuId" />
+            <input type="button" id="BtnBuscar" value="Buscar" />
+        </li>
+        <li>
+            <label>Nombre:</label>
+            <input type="text" id="TxtUsuNombre" />
+        </li>
+        <li>
+            <label>Genero:</label>
+            <input type="text" id="TxtUsuGenero" />
+        </li>
+        <li>
+            <label>Correo:</label>
+            <input type="text" id="TxtUsuCorreo" />
+        </li>
+        <li>
+            <label>Telefono:</label>
+            <input type="text" id="TxtUsuTelefono" />
+        </li>
+        <li>
+            <label>Rol:</label>
+            <input type="text" id="TxtUsuRol" />
+        </li>
+        <li>
+            <input type="button" id="BtnAgregar" value="Agregar" />
+            <input type="button" id="BtnEliminar" value="Eliminar" />
+            <input type="button" id="BtnActualizar" value="Actualizar" />
+        </li>
+    </ul>
+</div>
+@section scripts
+{
+    <script type="text/javascript" src="@Url.Content("/Scripts/app/Biblioteca.js")"></script>
+}
+
+
